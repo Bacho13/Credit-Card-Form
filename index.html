@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place the order</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <div class="formcontainer">
+         <h1>PAYMENT</h1>
+         <form action="login" method="post">
+             
+             <label for="nameOnCard">NAME IN CARD</label>
+             <input type="text" id="nameOnCard" name="name" placeholder="Name on card" >
+             <label for="sName" for="cardNumber">CARD NUMBER</label>
+             <input type="password" id="cardNumber" name="cardNumber" placeholder="Card Number" >
+
+             <div class="oneline">
+                 <div class="underlabel">
+                   <label for="month">EXP. MONTH</label>
+                   <input type="number" name="month" id="month" min="1" max="12" step="1" value="01" onchange="if(parseInt(this.value,10)<10)this.value='0'+this.value;" />
+                 </div>
+                 <div class="underlabel">
+                   <label for="month">EXP. YEAR</label>
+                   <input type="number" name="year" id="year" min="1900" max="2099" step="1" value="2021" />
+                 </div>
+             </div>
+
+             <div class="oneline">
+                <div class="underlabel">
+                  <label for="cvv">CVV</label>
+                  <input type="password" name="cvv" id="cvv"  />
+                </div>
+                <div class="underlabel">
+                    <label for="zipCode">ZIP CODE</label>
+                    <input type="number" name="zipCode" id="zipCode" value="97219" />
+                </div>
+            </div>
+
+            
+            <div class="chkandsave">
+                 <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                 <label for="vehicle3">Save credit card</label>
+            </div>     
+
+             <h4>Change Payment Mathod</h4>
+
+            <button type="button">CONFIRM & PLACE ORDER</button>
+
+
+         </form>
+       
+    </div>     
+
+
+
+
+</div>
+    
+</body>
+</html>

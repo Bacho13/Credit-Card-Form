@@ -1,0 +1,135 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: lightgray;
+}
+.container
+{
+    width: 50%;
+    justify-content: center;
+    margin: 0 auto;
+    -webkit-box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.48); 
+box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.48);
+    
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+.formcontainer
+{
+    padding: 20px 150px 30px 150px;
+    background-color: white;
+}
+
+
+h1
+{   font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #553A2E;
+    font-size: 25px;
+    text-align: center;
+}
+label
+{
+    font-family: 'Roboto', sans-serif;
+    color: #553A2E;
+    padding: 10px 0px;
+    font-weight: bold;
+}
+.oneline
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+        
+}
+.underlabel
+{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+}
+.chkandsave
+{
+    display: flex;
+    align-items: center;
+}
+.chkandsave label
+{
+    margin-left: 20px;
+}
+
+h4
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    color: #BE8712;
+    margin: 30px auto;
+    font-size: 15px;
+    
+}
+
+button
+{
+    background-color: #553A2E;
+    color: white;
+    font-weight: bold;
+    width: 60%;
+    padding: 15px 0px;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+}
+
+
+input[type=text] 
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: solid 1px #E0E6F0;
+    background-color: #E8F0FE;
+    color: #553A2E;
+    font-size: bold;
+}
+input[type=password] 
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: solid 1px #E0E6F0;
+    background-color: #E8F0FE;
+}
+input[type=number] 
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: solid 1px #E0E6F0;
+    background-color: #E8F0FE;
+    color: #553A2E;
+    font-size: bold;
+}
+.chkandsave label
+{
+    color: #9D918C;
+    font-weight: lighter;
+}
+input[type=checkbox] 
+{
+    height: 20px;
+    width: 20px;
+    border: solid 1px #E0E6F0;
+    background-color: #E8F0FE;
+}
+input[type=checkbox] :hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
